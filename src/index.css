@@ -1,0 +1,101 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Signika:wght@300..700&display=swap');;
+
+body {
+  font-family: "Merriweather", serif;
+}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Slide in from the top */
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide in from the bottom */
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#map {
+  height: 400px; /* Adjust height as necessary */
+  width: 100%;
+  margin: 20px 0;
+}
+
+#searchContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 45%; /* Adjust width as necessary */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#info {
+  margin-top: 20px;
+}
+
+.directions-info {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.hospital-info, .doctor-info {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #e9e9e9;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.hospital-info:hover, .doctor-info:hover {
+  background-color: #d9d9d9;
+}
+
+.distance-info {
+  font-weight: bold;
+}
+
