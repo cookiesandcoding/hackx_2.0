@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="flex flex-row space-x-20 justify-between w-full">
         <div className="flex flex-col space-y-12">
           <div className="flex flex-row space-x-8">
-            <img src="/care-mate-logo.png" alt="Care-Mate Logo" className="h-12 w-12" />
+            <img src={require('../../care-mate-logo.jpeg')} alt="Care-Mate Logo" className="h-12 w-12" />
             <span className="font-bold text-[#b3ebf2] text-2xl">Caremate</span>
           </div>
           <div className="flex flex-row space-x-8">
